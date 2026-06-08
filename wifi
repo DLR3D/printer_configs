@@ -2,5 +2,7 @@
 SSID:"WIFI_SSID"
 PASS:"PASSWORD"
 
+# AP options
 # To disable AP generation uncomment the line (remove # before word) DISABLE_AP
 #DISABLE_AP
+AP_NAME: DE_BETA
