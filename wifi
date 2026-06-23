@@ -1,8 +1,9 @@
-# Fill in your wifi data, 
-SSID:"WIFI_SSID"
-PASS:"PASSWORD"
+# Fill in your wifi data, replace WIFI_SSID with your desired SSID and PASSWORD with the matching password (no spaces before or after) 
+SSID:WIFI_SSID
+PASS:PASSWORD
 
 # AP options
+# Default AP password is the Ap name in lower case + _ap
 # To disable AP generation uncomment the line (remove # before word) DISABLE_AP
 #DISABLE_AP
 AP_NAME: DE_BETA
