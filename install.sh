@@ -19,6 +19,7 @@ module_name5="nozzle_wipe.cfg"
 copy_module_name1="printer.cfg"
 copy_module_name2="wifi"
 copy_module_name3="KlipperScreen.conf"
+copy_module_name4="addresses.cfg"
 
 klipper_config_path="$HOME/printer_data/config/"
 mainsail_theme_path=".theme"
@@ -35,6 +36,7 @@ ln -sf "$repo_path/$mainsail_theme_path" "${klipper_config_path}/${mainsail_them
 cp -f "$repo_path/$copy_module_name1" "${klipper_config_path}${copy_module_name1}"
 cp -f "$repo_path/$copy_module_name2" "${klipper_config_path}${copy_module_name2}"
 cp -f "$repo_path/$copy_module_name3" "${klipper_config_path}${copy_module_name3}"
+cp -f "$repo_path/$copy_module_name4" "${klipper_config_path}${copy_module_name4}"
 
 blk_path=~/printer_data/config/moonraker.conf
 # Include update block in moonraker.conf
