@@ -1,5 +1,5 @@
 #!/bin/bash
-repo=DE_Beta_printer_configs
+repo=HF400_printer_configs
 repo_path="$(cd "$(dirname "$0")" && pwd)"
 
 # Exit if root
@@ -8,11 +8,11 @@ if [ "$(id -u)" = "0" ]; then
     exit 1
 fi
 
-echo "Installing DE Beta configs."
+echo "Installing HF400 configs."
 
-module_name1="de-beta.cfg"
-module_name2="de-beta-macros.cfg"
-module_name3="de-macros.cfg"
+module_name1="hf400.cfg"
+module_name2="hf400_macros.cfg"
+module_name3="hf_macros.cfg"
 module_name4="moonraker.conf"
 module_name5="nozzle_wipe.cfg"
 
@@ -44,7 +44,7 @@ if [ -f "$blk_path" ]; then
         sed -i "\$a type: git_repo" "$blk_path"
         sed -i "\$a path: $repo_path" "$blk_path"
         sed -i "\$a origin: https://github.com/DLR3D/printer_configs.git" "$blk_path"
-        sed -i "\$a primary_branch: Beta" "$blk_path"
+        sed -i "\$a primary_branch: HF400" "$blk_path"
         sed -i "\$a is_system_service: False" "$blk_path"
         sudo service moonraker start
     else
