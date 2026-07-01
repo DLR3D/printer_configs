@@ -6,4 +6,4 @@ PASS:PASSWORD
 # Default AP password is the Ap name in lower case + _ap
 # To disable AP generation uncomment the line (remove # before word) DISABLE_AP
 #DISABLE_AP
-AP_NAME: DE_BETA
+AP_NAME: HF400

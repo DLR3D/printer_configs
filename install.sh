@@ -21,6 +21,7 @@ copy_module_name2="wifi"
 copy_module_name3="KlipperScreen.conf"
 
 klipper_config_path="$HOME/printer_data/config/"
+mainsail_theme_path=".theme"
 
 # Linking non modifiable files
 ln -sf "$repo_path/$module_name1" "${klipper_config_path}${module_name1}"
@@ -28,6 +29,7 @@ ln -sf "$repo_path/$module_name2" "${klipper_config_path}${module_name2}"
 ln -sf "$repo_path/$module_name3" "${klipper_config_path}${module_name3}"
 ln -sf "$repo_path/$module_name4" "${klipper_config_path}${module_name4}"
 ln -sf "$repo_path/$module_name5" "${klipper_config_path}${module_name5}"
+ln -sf "$repo_path/$mainsail_theme_path" "${klipper_config_path}/${mainsail_theme_path}"
 
 # Copying modifiable files
 cp -f "$repo_path/$copy_module_name1" "${klipper_config_path}${copy_module_name1}"
