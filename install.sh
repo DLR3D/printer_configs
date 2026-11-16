@@ -47,7 +47,7 @@ if [ -f "$blk_path" ]; then
         sed -i "\$a type: git_repo" "$blk_path"
         sed -i "\$a path: $repo_path" "$blk_path"
         sed -i "\$a origin: https://github.com/DLR3D/printer_configs.git" "$blk_path"
-        sed -i "\$a primary_branch: Beta" "$blk_path"
+        sed -i "\$a primary_branch: Beta_V0.2" "$blk_path"
         sed -i "\$a is_system_service: False" "$blk_path"
         sudo service moonraker start
     else
